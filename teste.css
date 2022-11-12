@@ -1,0 +1,23 @@
+
+
+
+
+
+
+h1{
+    color:  red;
+}
+/* #h1{
+    color: blueviolet;
+} */
+
+h1.h1{
+    color: aqua;
+}
+
+.titre{
+    color: black;
+}
+
+
+

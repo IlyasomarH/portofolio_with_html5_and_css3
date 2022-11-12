@@ -10,23 +10,23 @@
 <body>
 
     <div class="container">
-        <header>
+         <header id="acceuil">
             <div class="logo">
-                IOH
+              <span>  IOH</span>
             </div>
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Acceuil</a>
+                        <a href="#acceuil">Acceuil</a>
                     </li>
                     <li>
-                        <a href="#">Propos</a>
+                        <a href="#propos">Propos</a>
                     </li>
                     <li>
-                        <a href="#">Formation</a>
+                        <a href="#formation">Formation</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -39,23 +39,91 @@
 
             <!-- 1ere section- lading page -->
 
-            <section>
+            <section class="s1" >
+
+                <div class="col1">
+                    <p>
+                        Je m’appelle <span>Ilyas</span> , <br> je suis 
+                         <span>formateur</span>  <br>
+                        et <br>
+                        <span>developpeur web</span> <br>
+                        chez Arrey Groupe
+
+                    </p>
+                    <a href="#propos" id="cta">Savoir plus </a>
+                </div>
+                <div class="col2">
+
+                    <img src="img/avatar.png" alt="avatar">
+
+                </div>
 
             </section>
 
 
             <!-- 2eme section -propos -->
-            <section>
+            <section id="propos">
+
+                <h1> Propos</h1>
+                <div class="centre">
+                    <div class="col3">
+                        <p>
+                            Je m’appelle <b>Ilyas Omar Houssein</b>  je suis <b>un developpeur</b>  et  <b>formateur web </b> chez Arrey Groupe  depuis 2020, j’ai formé pas mal plein des jeunes dans le developpement web, en cours dans cette formation j’ai appris plein des choses, que ça soit la partage de savoir et competence.
+                            on a crée plein site et application avec mes etudiants.
+                        </p>
+                        <a href="document/cv_ILYAS_OMAR_HOUSSEIN.pdf">Mon cv</a>
+                    </div>
+
+                    <div class="col4">
+                        <img src="img/ILYASOMARHOUSSEIN-removebg-preview.png" alt="c'est moi ilyas">
+                    </div>
+                </div>
                 
             </section>
 
             <!-- 3eme section - formation -->
-            <section>
+            <section id="formation">
+                <h1>Fromation</h1>
+
+                <div class="centre">
+                    <div class="col5">
+                        <img src="img/formation1.png" alt="formation">
+                        <h2>Formation web</h2>
+                        <a href="#">Savoir plus</a>
+
+                    </div>
+                    <div class="col6">
+                        <img src="img/web.png" alt=" creation d'in site web">
+                        <h2>Developpement web</h2>
+                        <a href="#">Savoir plus</a>
+
+                    </div>
+                </div>
                 
             </section>
+              
 
             <!-- 4eme section - Contact -->
-            <section>
+            <section id="contact">
+                <h1>Contact</h1>
+
+                <div class="centre">
+                    <div class="col7">
+                        <p>si vous avez une question n’hesitez pas a me poser ici</p>
+                        <form action="" method="post">
+                            <input type="text" name="name" id="" placeholder="Votre nom">
+                            <input type="email" name="mail" id="" placeholder="ex: name@gmail.com">
+
+                            <textarea name="commente" id="" cols="30" rows="4" placeholder="votre commentaire please"></textarea>
+                            <input type="submit" value="Envoyer">
+
+                        </form>
+                    </div>
+
+                    <div class="col8">
+                        <img src="img/undraw_Developer_activity_re_39tg.png" alt="contact">
+                    </div>
+                </div>
                 
             </section>
 
@@ -67,6 +135,20 @@
 
 
         <footer>
+
+            <div class="col9">
+               <span>
+                    IOH
+               </span>
+            </div>
+            <div class="col10">
+                developper par IO @2022
+            </div>
+            <div class="col11">
+                <img src="img/Vector (1).png" alt=" what app" class="img">
+                <img src="img/Vector.png" alt="">
+                <img src="img/logo-linkedin.png" alt="">
+            </div>
 
         </footer>
     </div>
