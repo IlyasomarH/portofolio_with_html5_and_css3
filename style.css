@@ -1,10 +1,18 @@
 :root{
-    --color-principal:#7EF3FB;
+    /* --color-principal:#EC6EAD; */
     --color-secondaire:#1F0849;
     --text-primary:arial;
+    --white:white;
+    
     --boxshadow: 5px 5px 5px rgb(214, 213, 213),-5px -5px 5px rgb(214, 213, 213),5px -5px 5px rgb(214, 213, 213), -5px 5px 5px rgb(214, 213, 213);
     --boxshadow1: 5px 5px 5px rgb(214, 213, 213),-5px -5px 5px rgb(214, 213, 213),5px -5px 5px rgb(45, 40, 40), -5px 5px 5px rgb(45, 40, 40);
 
+}
+section{
+    margin-bottom: 100px;
+}
+a:hover{
+    color: var(--white);
 }
 
 h1{
@@ -19,12 +27,17 @@ h2{
     color: var(--color-secondaire);
     font-family: var(--text-primary);
 }
+h3{
+    font-size: 1.5em;
+    color: var(--white);
+    font-family: var(--text-primary);
+}
 
 h2+a,p+a,main  section:nth-child(4) div.centre div.col7 form input[type="submit"]{
     display: block;
     text-decoration: none;
-    background-color: var(--color-secondaire);
-    color: var(--color-principal);
+    background-color: var(--white);
+    color: var(--color-secondaire);
     height: 35px;
     line-height: 25px;
     font-size: 1.9em;
@@ -41,12 +54,19 @@ h2+a,p+a,main  section:nth-child(4) div.centre div.col7 form input[type="submit"
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
 }
 
 body{
     padding: 10px;
     /* padding-top: 20px;
     margin-top: 10px; */
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(236,110,160,1) 35%, rgba(0,212,255,1) 100%);
+color: white;
 }
 
 
@@ -62,7 +82,15 @@ body{
 .container header{
     display: flex;
     justify-content: space-between;
-    height: 20vh;
+    height: 15vh;
+    box-shadow: 1px 10px 5px rgba(49, 44, 44, 0.1);
+    padding-top: 10px;
+    position: fixed;
+    width:100%;
+   background:  linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(236,110,160,1) 35%, rgba(0,212,255,1) 100%);
+    z-index: 2;
+    margin-top: -10px;
+
 }
 
 .container header div{
@@ -74,13 +102,13 @@ body{
 
 }
 .container header div span{
-    border: 1px solid black;
+    border: 1px solid rgb(247, 244, 244);
     width: 50px;
     padding: 30px;
     margin-top: 500px;
     border-radius: 100%;
     background-color: var(--color-principal);
-    color: var(--color-secondaire);
+    color: var(--white);
 }
 
 .container header nav{
@@ -118,14 +146,19 @@ body{
 main section.s1{
     display: flex;
     justify-content: space-between;
+    padding-top: 120px;
 }
 
 
 main section.s1 div.col2{
     /* display: block; */
     overflow: hidden;
-    /* width: 100px; */
-    border: 1px solid black;
+    /* width: 100%; */
+    flex: 1;
+    background-color: var(--color-principal);
+   background-size: cover;
+
+    border: 1px solid var(--white);
     border-radius: 100%;
     /* box-shadow: 0px 20px 5px black,  0px 10px 5px black; */
    
@@ -133,6 +166,10 @@ main section.s1 div.col2{
 
 main section.s1 div.col2 img{
     width: 500px;
+    
+    /* margin: auto auto;
+    padding: 10px auto; */
+    border: 1px solid black;
    
 }
 
@@ -140,6 +177,8 @@ main section.s1 div.col1{
     text-align: center;
     /* border: 1px solid blueviolet; */
     margin: auto auto;
+    flex: 2;
+   
 }
 
 
@@ -163,7 +202,12 @@ main section.s1 div.col1 a{
    margin-top: 30px;
     line-height: 40px;
     font-size: 1.9em;
-    box-shadow: 5px 5px 5px rgb(214, 213, 213),-5px -5px 5px rgb(214, 213, 213),5px -5px 5px rgb(214, 213, 213), -5px 5px 5px rgb(214, 213, 213);
+
+}
+main section.s1 div.col1 a:hover{
+    box-shadow:var(--boxshadow)
+    
+
 }
 
 
@@ -209,22 +253,32 @@ main section:nth-child(2) div.centre div.col3 a
 {
     display: block;
     text-decoration: none;
-    background-color: var(--color-secondaire);
-    color: var(--color-principal);
-    height: 30px;
-    line-height: 25px;
+    background-color: var(--white);
+    color: var(--color-secondaire);
+    height: 49px;
+    line-height: 45px;
     font-size: 1.9em;
     box-shadow: 0 5px 5px black;
     border-radius: 5px;
     padding: 5px;
-    width: 50%;
-    margin: 1px auto;
+    width: 100%;
+    margin: 38px auto;
 }
 
 
 main section:nth-child(2) div.centre div.col3 p{
-    font-size: 2.0em;
+    font-size: 1.5em;
     font-family: var(--text-primary);
+    text-align: justify;
+    font-weight: normal;
+    line-height: 35px;
+    
+    
+}
+main section:nth-child(2) div.centre div.col3 p span{
+    color: var(--color-secondaire);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 main section:nth-child(2) div.centre div.col4{
@@ -274,11 +328,37 @@ main  section:nth-child(3) div.centre div.col5{
 
 main  section:nth-child(3) div.centre div.col5 a{
     text-decoration: none;
+    display: block;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--color-secondaire);
+    height: 49px;
+    line-height: 45px;
+    font-size: 1.9em;
+    box-shadow: 0 5px 5px black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    margin: 38px auto;
+    
     
 }
 
-main  section:nth-child(3) div.centre div.col6{
+main  section:nth-child(3) div.centre div.col6 a{
     /* box-shadow: 2px 5px 10px rgb(209, 206, 206),-2px -5px 10px rgb(209, 206, 206); */
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--color-secondaire);
+    height: 49px;
+    line-height: 45px;
+    font-size: 1.9em;
+    box-shadow: 0 5px 5px black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+    margin: 38px auto;
 }
 
 main  section:nth-child(3) div.centre div.col6 img{
@@ -318,7 +398,7 @@ main  section:nth-child(4) div.centre div.col7{
 
 main  section:nth-child(4) div.centre div.col7 p{
     font-size: 1.5em;
-    color: var(--color-secondaire);
+    color: var(--white);
 }
 
 
@@ -327,8 +407,9 @@ main  section:nth-child(4) div.centre div.col7 form input, textarea{
     width: 100%;
     margin: 50px auto;
     border: none;
-    border-bottom: 1px solid var(--color-secondaire);
-    color: var(--color-secondaire);
+    background-color: transparent;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
     font-size: 1.5em;
   
 
@@ -354,17 +435,20 @@ footer{
     color: var(--color-principal);
     height: 10vh;
     margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
 
 
 }
 
 footer div.col9{
-    border: 1px solid red;
+    border: 1px solid var(--white);
     border-radius: 100%;
     margin: auto 0;
     overflow: hidden;
     background-color: var(--color-principal);
-    color: var(--color-secondaire);
+    color: var(--white);
     width: 50px;
     height: 50px;
     text-align: center;
